@@ -1,12 +1,14 @@
+includes:
+	- doctrine.neon
+	- doctrine.forms.neon
+
 php:
 	date.timezone: Europe/Prague
-
 
 nette:
 	application:
 		mapping:
 			*: App\*Module\Presenters\*Presenter
-
 
 services:
 	- App\RouterFactory

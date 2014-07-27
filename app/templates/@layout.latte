@@ -14,7 +14,10 @@
 
 		<div n:foreach="$flashes as $flash" class="flash {$flash->type}">{$flash->message}</div>
 
-		{include content}
+		<div class="container">
+			<h1><a n:href="Homepage:">Kdyby\DoctrineForms testing sandbox</a></h1>
+			{include content}
+		</div>
 
 		{block scripts}
 			<script src="{$basePath}/js/jquery.js"></script>

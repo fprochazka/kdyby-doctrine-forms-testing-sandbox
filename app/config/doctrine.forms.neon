@@ -1,0 +1,4 @@
+extensions:
+	doctrineForms: Kdyby\DoctrineForms\DI\FormsExtension
+	validator: Kdyby\Validator\DI\ValidatorExtension
+	translation: Kdyby\Translation\DI\TranslationExtension

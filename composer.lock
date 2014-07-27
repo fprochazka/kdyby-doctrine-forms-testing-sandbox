@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d4e9639f8ecb901ce51884e204b5d031",
+    "hash": "792d775dff114fe4336ad0a5661a3a74",
     "packages": [
         {
             "name": "dg/adminer-custom",
@@ -642,6 +642,134 @@
             "time": "2014-05-13 11:27:42"
         },
         {
+            "name": "kdyby/console",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Kdyby/Console.git",
+                "reference": "a1612c1586dcb78243a0b671642916c742ac23c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Kdyby/Console/zipball/a1612c1586dcb78243a0b671642916c742ac23c4",
+                "reference": "a1612c1586dcb78243a0b671642916c742ac23c4",
+                "shasum": ""
+            },
+            "require": {
+                "nette/nette": "~2.1@dev",
+                "symfony/console": "~2.4"
+            },
+            "require-dev": {
+                "jakub-onderka/php-parallel-lint": "~0.6",
+                "kdyby/events": "@dev",
+                "nette/tester": "@dev",
+                "symfony/event-dispatcher": "~2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Kdyby\\Console\\": "src/"
+                },
+                "classmap": [
+                    "src/Kdyby/Console/CliPresenter.php",
+                    "src/Kdyby/Console/exceptions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Filip Procházka",
+                    "email": "filip@prochazka.su",
+                    "homepage": "http://filip-prochazka.com"
+                }
+            ],
+            "description": "Symfony Console integration for Kdyby components",
+            "homepage": "http://kdyby.org",
+            "keywords": [
+                "console",
+                "kdyby",
+                "nette"
+            ],
+            "time": "2014-05-13 13:33:50"
+        },
+        {
+            "name": "kdyby/doctrine",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Kdyby/Doctrine.git",
+                "reference": "d699605bcdfd2f9ff12a21c805eba85c9b57fc7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Kdyby/Doctrine/zipball/d699605bcdfd2f9ff12a21c805eba85c9b57fc7d",
+                "reference": "d699605bcdfd2f9ff12a21c805eba85c9b57fc7d",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": "~2.4.1",
+                "kdyby/annotations": "~2.0.2@dev",
+                "kdyby/console": "~2.1@dev",
+                "kdyby/doctrine-cache": "~2.2@dev",
+                "kdyby/events": "~2.0@dev",
+                "nette/nette": "~2.1@dev"
+            },
+            "require-dev": {
+                "dg/dibi": "~2.0",
+                "jakub-onderka/php-parallel-lint": "~0.6",
+                "nette/tester": "@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Kdyby\\Doctrine\\": "src/",
+                    "Kdyby\\Persistence\\": "src/",
+                    "Kdyby\\DibiBridge\\": "src/"
+                },
+                "classmap": [
+                    "src/Kdyby/Doctrine/exceptions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Filip Procházka",
+                    "email": "filip@prochazka.su",
+                    "homepage": "http://filip-prochazka.com"
+                }
+            ],
+            "description": "Doctrine integration into Nette Framework",
+            "homepage": "http://kdyby.org",
+            "keywords": [
+                "dbal",
+                "doctrine",
+                "kdyby",
+                "nette",
+                "orm"
+            ],
+            "time": "2014-05-13 12:26:06"
+        },
+        {
             "name": "kdyby/doctrine-cache",
             "version": "v2.3.1",
             "source": {
@@ -809,6 +937,66 @@
                 "validation"
             ],
             "time": "2014-07-08 18:56:55"
+        },
+        {
+            "name": "kdyby/events",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Kdyby/Events.git",
+                "reference": "505d12dc444355dc4eff9e2b1e861c2c4542cf5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Kdyby/Events/zipball/505d12dc444355dc4eff9e2b1e861c2c4542cf5b",
+                "reference": "505d12dc444355dc4eff9e2b1e861c2c4542cf5b",
+                "shasum": ""
+            },
+            "require": {
+                "nette/nette": "~2.1@dev"
+            },
+            "require-dev": {
+                "jakub-onderka/php-parallel-lint": "~0.6",
+                "nette/tester": "@dev",
+                "symfony/event-dispatcher": "~2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Kdyby\\Events\\": "src/"
+                },
+                "classmap": [
+                    "src/Kdyby/Events/exceptions.php"
+                ],
+                "files": [
+                    "src/Doctrine/compatibility.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Filip Procházka",
+                    "email": "filip@prochazka.su",
+                    "homepage": "http://filip-prochazka.com"
+                }
+            ],
+            "description": "Events for Nette Framework",
+            "homepage": "http://kdyby.org",
+            "keywords": [
+                "kdyby",
+                "nette"
+            ],
+            "time": "2014-05-13 11:27:42"
         },
         {
             "name": "kdyby/translation",
@@ -2506,6 +2694,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "kdyby/doctrine-forms": 20,
+        "kdyby/doctrine": 20,
         "kdyby/validator": 20
     },
     "platform": {
