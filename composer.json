@@ -5,7 +5,8 @@
 		"kdyby/doctrine-forms": "@dev",
 		"kdyby/doctrine": "@dev",
 		"kdyby/validator": "@dev",
-		"nextras/forms": "@dev"
+		"nextras/forms": "@dev",
+		"kdyby/autowired": "@dev"
 	},
 	"require-dev": {
 		"nette/tester": "~1.0"

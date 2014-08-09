@@ -3,25 +3,21 @@
 namespace App\Presenters;
 
 use App\Components\SimpleForm;
+use Kdyby\Autowired\AutowireComponentFactories;
 use Nette;
 
 
 class HomepagePresenter extends Nette\Application\UI\Presenter
 {
-	/**
-	 * @var SimpleForm\IControlFactory
-	 * @inject
-	 */
-	public $simpleFormFactory;
+	use AutowireComponentFactories;
 
 
 	/**
 	 * @return SimpleForm\Control
 	 */
-	protected function createComponentSimpleForm()
+	protected function createComponentSimpleForm(SimpleForm\IControlFactory $factory)
 	{
-		$control = $this->simpleFormFactory->create();
-		return $control;
+		return $factory->create();
 	}
 
 }

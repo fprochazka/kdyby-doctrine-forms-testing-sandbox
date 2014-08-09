@@ -5,26 +5,23 @@ namespace App\Components\SimpleForm;
 use App\Components\EntityForm;
 use App\Components\EntityFormFactory;
 use App\Model\Entities\CmsAddress;
+use Kdyby\Autowired\AutowireComponentFactories;
 use Nette;
 
 
 class Control extends Nette\Application\UI\Control
 {
+	use AutowireComponentFactories;
+
 	/**
 	 * @var CmsAddress
 	 */
 	private $cmsAddress;
 
-	/**
-	 * @var EntityFormFactory
-	 */
-	private $entityFormFactory;
 
-
-	public function __construct(EntityFormFactory $entityFormFactory)
+	public function __construct()
 	{
 		$this->cmsAddress = new CmsAddress;
-		$this->entityFormFactory = $entityFormFactory;
 	}
 
 
@@ -39,7 +36,7 @@ class Control extends Nette\Application\UI\Control
 			return;
 		}
 
-		// note: entity has to bind after presenter attachment due to internal service locator
+		// note: entity has to be bind after presenter attachment due to internal service locator
 		/** @var EntityForm $form */
 		$form = $this['form'];
 		$form->bindEntity($this->cmsAddress);
@@ -49,9 +46,9 @@ class Control extends Nette\Application\UI\Control
 	/**
 	 * @return EntityForm
 	 */
-	protected function createComponentForm()
+	protected function createComponentForm(EntityFormFactory $factory)
 	{
-		$form = $this->entityFormFactory->create();
+		$form = $factory->create();
 		$form->addText('country', 'Country');
 		$form->addText('zip', 'Zip');
 		$form->addText('city', 'City');
