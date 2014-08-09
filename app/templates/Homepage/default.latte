@@ -1,7 +1,13 @@
 {block content}
 
-<h2>Examples</h2>
+<hr>
 
-<ul>
-	<li><a n:href="SimpleForm:">Simple form</a></li>
-</ul>
+<h3>Required changes in package</h3>
+<p>
+	To make this work, add to <a href="https://github.com/Kdyby/DoctrineForms/blob/master/src/Kdyby/DoctrineForms/Controls/TextControl.php#L153">TextControl::save()</a> this piece of code:
+	<code>$component->loadHttpData();</code>. Otherwise sent values are not loaded to entity.
+</p>
+
+<hr>
+
+{control simpleForm}
