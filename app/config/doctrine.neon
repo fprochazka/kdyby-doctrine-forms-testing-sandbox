@@ -8,6 +8,6 @@ doctrine:
 	driver: pdo_sqlite
 	user: root
 	password:
-	path: %appDir%/model/db.sqlite+
+	path: %appDir%/model/db.sqlite
 	metadata:
 		App: %appDir%/model/entities

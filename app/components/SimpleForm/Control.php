@@ -10,7 +10,9 @@ use Nette;
 
 class Control extends Nette\Application\UI\Control
 {
-	/** @var CmsAddress */
+	/**
+	 * @var CmsAddress
+	 */
 	private $cmsAddress;
 
 	/**

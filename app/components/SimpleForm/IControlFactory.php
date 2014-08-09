@@ -6,7 +6,9 @@ namespace App\Components\SimpleForm;
 interface IControlFactory
 {
 
-	/** @return Control */
+	/**
+	 * @return Control
+	 */
 	public function create();
 
 }
