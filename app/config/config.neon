@@ -13,3 +13,7 @@ nette:
 services:
 	- App\RouterFactory
 	router: @App\RouterFactory::createRouter
+	- App\Components\EntityFormFactory
+	- App\Components\SimpleForm\IControlFactory
+
+
