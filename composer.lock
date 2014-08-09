@@ -4,27 +4,8 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "792d775dff114fe4336ad0a5661a3a74",
+    "hash": "8b209a9c05620071885fa3f837245d21",
     "packages": [
-        {
-            "name": "dg/adminer-custom",
-            "version": "v1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dg/adminer-custom.git",
-                "reference": "8a621342c57bc8194c4489ebb983757b8da52571"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dg/adminer-custom/zipball/8a621342c57bc8194c4489ebb983757b8da52571",
-                "reference": "8a621342c57bc8194c4489ebb983757b8da52571",
-                "shasum": ""
-            },
-            "type": "project",
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "Customization for the best database management tool written in PHP, Adminer",
-            "time": "2014-06-11 07:56:43"
-        },
         {
             "name": "doctrine/annotations",
             "version": "v1.2.0",
@@ -578,34 +559,55 @@
         },
         {
             "name": "kdyby/annotations",
-            "version": "v2.0.4",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Annotations.git",
-                "reference": "ebc12837291acb632fe4f9bf8bdea572eb883938"
+                "reference": "c7d05deee2b3f0ff8fa87b6bcc26f87314c507bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Annotations/zipball/ebc12837291acb632fe4f9bf8bdea572eb883938",
-                "reference": "ebc12837291acb632fe4f9bf8bdea572eb883938",
+                "url": "https://api.github.com/repos/Kdyby/Annotations/zipball/c7d05deee2b3f0ff8fa87b6bcc26f87314c507bd",
+                "reference": "c7d05deee2b3f0ff8fa87b6bcc26f87314c507bd",
                 "shasum": ""
             },
             "require": {
                 "doctrine/annotations": "~1.1",
                 "kdyby/doctrine-cache": "~2.2",
-                "nette/nette": "~2.1@dev"
+                "nette/di": "~2.2@dev",
+                "nette/utils": "~2.2@dev"
             },
             "conflict": {
                 "kdyby/doctrine": "0.9.*"
             },
             "require-dev": {
                 "jakub-onderka/php-parallel-lint": "~0.6",
-                "nette/tester": "@dev"
+                "kdyby/doctrine-cache": "~2.2@dev",
+                "latte/latte": "~2.2@dev",
+                "nette/application": "~2.2@dev",
+                "nette/bootstrap": "~2.2@dev",
+                "nette/caching": "~2.2@dev",
+                "nette/component-model": "~2.2@dev",
+                "nette/database": "~2.2@dev",
+                "nette/finder": "~2.2@dev",
+                "nette/forms": "~2.2@dev",
+                "nette/http": "~2.2@dev",
+                "nette/mail": "~2.2@dev",
+                "nette/neon": "~2.2@dev",
+                "nette/nette": "~2.2@dev",
+                "nette/php-generator": "~2.2@dev",
+                "nette/reflection": "~2.2@dev",
+                "nette/robot-loader": "~2.2@dev",
+                "nette/safe-stream": "~2.2@dev",
+                "nette/security": "~2.2@dev",
+                "nette/tester": "@dev",
+                "nette/tokenizer": "~2.2@dev",
+                "tracy/tracy": "~2.2@dev"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "2.1-dev"
                 }
             },
             "autoload": {
@@ -628,7 +630,7 @@
                 {
                     "name": "Jáchym Toušek",
                     "email": "enumag@gmail.com",
-                    "homepage": "http://m33.cz/"
+                    "homepage": "http://enumag.cz"
                 }
             ],
             "description": "Doctrine Annotations integration into Nette Framework",
@@ -639,36 +641,56 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2014-05-13 11:27:42"
+            "time": "2014-07-27 14:41:02"
         },
         {
             "name": "kdyby/console",
-            "version": "v2.2.0",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Console.git",
-                "reference": "a1612c1586dcb78243a0b671642916c742ac23c4"
+                "reference": "e191401cb6feab836e519afd5777aa1bdab969ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Console/zipball/a1612c1586dcb78243a0b671642916c742ac23c4",
-                "reference": "a1612c1586dcb78243a0b671642916c742ac23c4",
+                "url": "https://api.github.com/repos/Kdyby/Console/zipball/e191401cb6feab836e519afd5777aa1bdab969ff",
+                "reference": "e191401cb6feab836e519afd5777aa1bdab969ff",
                 "shasum": ""
             },
             "require": {
-                "nette/nette": "~2.1@dev",
-                "symfony/console": "~2.4"
+                "nette/application": "~2.2@dev",
+                "nette/di": "~2.2@dev",
+                "nette/http": "~2.2@dev",
+                "symfony/console": "~2.5"
             },
             "require-dev": {
                 "jakub-onderka/php-parallel-lint": "~0.6",
                 "kdyby/events": "@dev",
+                "latte/latte": "~2.2@dev",
+                "nette/bootstrap": "~2.2@dev",
+                "nette/caching": "~2.2@dev",
+                "nette/component-model": "~2.2@dev",
+                "nette/database": "~2.2@dev",
+                "nette/finder": "~2.2@dev",
+                "nette/forms": "~2.2@dev",
+                "nette/mail": "~2.2@dev",
+                "nette/neon": "~2.2@dev",
+                "nette/nette": "~2.2@dev",
+                "nette/php-generator": "~2.2@dev",
+                "nette/reflection": "~2.2@dev",
+                "nette/robot-loader": "~2.2@dev",
+                "nette/safe-stream": "~2.2@dev",
+                "nette/security": "~2.2@dev",
                 "nette/tester": "@dev",
-                "symfony/event-dispatcher": "~2.4"
+                "nette/tokenizer": "~2.2@dev",
+                "nette/utils": "~2.2@dev",
+                "symfony/event-dispatcher": "~2.4",
+                "tracy/tracy": "~2.2@dev"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -700,39 +722,59 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2014-05-13 13:33:50"
+            "time": "2014-07-27 15:00:37"
         },
         {
             "name": "kdyby/doctrine",
-            "version": "v2.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Doctrine.git",
-                "reference": "d699605bcdfd2f9ff12a21c805eba85c9b57fc7d"
+                "reference": "5f9c52b7efb42fc6a7a379b3b433bfa66d960561"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Doctrine/zipball/d699605bcdfd2f9ff12a21c805eba85c9b57fc7d",
-                "reference": "d699605bcdfd2f9ff12a21c805eba85c9b57fc7d",
+                "url": "https://api.github.com/repos/Kdyby/Doctrine/zipball/5f9c52b7efb42fc6a7a379b3b433bfa66d960561",
+                "reference": "5f9c52b7efb42fc6a7a379b3b433bfa66d960561",
                 "shasum": ""
             },
             "require": {
                 "doctrine/orm": "~2.4.1",
-                "kdyby/annotations": "~2.0.2@dev",
-                "kdyby/console": "~2.1@dev",
-                "kdyby/doctrine-cache": "~2.2@dev",
-                "kdyby/events": "~2.0@dev",
-                "nette/nette": "~2.1@dev"
+                "kdyby/annotations": "~2.1@dev",
+                "kdyby/console": "~2.3@dev",
+                "kdyby/doctrine-cache": "~2.3.1@dev",
+                "kdyby/events": "~2.2@dev",
+                "nette/di": "~2.2@dev",
+                "nette/neon": "~2.2@dev",
+                "nette/robot-loader": "~2.2@dev",
+                "nette/utils": "~2.2@dev"
             },
             "require-dev": {
                 "dg/dibi": "~2.0",
-                "jakub-onderka/php-parallel-lint": "~0.6",
-                "nette/tester": "@dev"
+                "jakub-onderka/php-parallel-lint": "~0.7",
+                "latte/latte": "~2.2@dev",
+                "nette/application": "~2.2@dev",
+                "nette/bootstrap": "~2.2@dev",
+                "nette/caching": "~2.2@dev",
+                "nette/component-model": "~2.2@dev",
+                "nette/database": "~2.2@dev",
+                "nette/finder": "~2.2@dev",
+                "nette/forms": "~2.2@dev",
+                "nette/http": "~2.2@dev",
+                "nette/mail": "~2.2@dev",
+                "nette/nette": "~2.2@dev",
+                "nette/php-generator": "~2.2@dev",
+                "nette/reflection": "~2.2@dev",
+                "nette/safe-stream": "~2.2@dev",
+                "nette/security": "~2.2@dev",
+                "nette/tester": "@dev",
+                "nette/tokenizer": "~2.2@dev",
+                "tracy/tracy": "~2.2@dev"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "2.1-dev"
                 }
             },
             "autoload": {
@@ -767,7 +809,7 @@
                 "nette",
                 "orm"
             ],
-            "time": "2014-05-13 12:26:06"
+            "time": "2014-08-02 02:31:37"
         },
         {
             "name": "kdyby/doctrine-cache",
@@ -856,12 +898,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/DoctrineForms.git",
-                "reference": "ded652bea89b7f18bcacd8be0b919d7727c02a12"
+                "reference": "20293ced3c07970b40ecad3b1807e8a3ceffae77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/DoctrineForms/zipball/ded652bea89b7f18bcacd8be0b919d7727c02a12",
-                "reference": "ded652bea89b7f18bcacd8be0b919d7727c02a12",
+                "url": "https://api.github.com/repos/Kdyby/DoctrineForms/zipball/20293ced3c07970b40ecad3b1807e8a3ceffae77",
+                "reference": "20293ced3c07970b40ecad3b1807e8a3ceffae77",
                 "shasum": ""
             },
             "require": {
@@ -876,7 +918,7 @@
                 "kdyby/doctrine": ">=0.10,<1.0"
             },
             "require-dev": {
-                "jakub-onderka/php-parallel-lint": "dev-master#f3c25d3aced13",
+                "jakub-onderka/php-parallel-lint": "~0.7",
                 "kdyby/doctrine": "~1.1@dev",
                 "latte/latte": "~2.2@dev",
                 "nette/application": "~2.2@dev",
@@ -936,34 +978,54 @@
                 "nette",
                 "validation"
             ],
-            "time": "2014-07-08 18:56:55"
+            "time": "2014-07-27 16:11:59"
         },
         {
             "name": "kdyby/events",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Events.git",
-                "reference": "505d12dc444355dc4eff9e2b1e861c2c4542cf5b"
+                "reference": "11c3861c50221894c156a46ca305c32a76aaf9af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Events/zipball/505d12dc444355dc4eff9e2b1e861c2c4542cf5b",
-                "reference": "505d12dc444355dc4eff9e2b1e861c2c4542cf5b",
+                "url": "https://api.github.com/repos/Kdyby/Events/zipball/11c3861c50221894c156a46ca305c32a76aaf9af",
+                "reference": "11c3861c50221894c156a46ca305c32a76aaf9af",
                 "shasum": ""
             },
             "require": {
-                "nette/nette": "~2.1@dev"
+                "nette/di": "~2.2@dev",
+                "nette/utils": "~2.2@dev"
             },
             "require-dev": {
                 "jakub-onderka/php-parallel-lint": "~0.6",
+                "latte/latte": "~2.2@dev",
+                "nette/application": "~2.2@dev",
+                "nette/bootstrap": "~2.2@dev",
+                "nette/caching": "~2.2@dev",
+                "nette/component-model": "~2.2@dev",
+                "nette/database": "~2.2@dev",
+                "nette/finder": "~2.2@dev",
+                "nette/forms": "~2.2@dev",
+                "nette/http": "~2.2@dev",
+                "nette/mail": "~2.2@dev",
+                "nette/neon": "~2.2@dev",
+                "nette/nette": "~2.2@dev",
+                "nette/php-generator": "~2.2@dev",
+                "nette/reflection": "~2.2@dev",
+                "nette/robot-loader": "~2.2@dev",
+                "nette/safe-stream": "~2.2@dev",
+                "nette/security": "~2.2@dev",
                 "nette/tester": "@dev",
-                "symfony/event-dispatcher": "~2.4"
+                "nette/tokenizer": "~2.2@dev",
+                "symfony/event-dispatcher": "~2.5",
+                "tracy/tracy": "~2.2@dev"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -996,20 +1058,20 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2014-05-13 11:27:42"
+            "time": "2014-07-27 14:16:10"
         },
         {
             "name": "kdyby/translation",
-            "version": "v2.0.1",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Translation.git",
-                "reference": "5024eeda16f73ab0ad724e5165f0444bf6698619"
+                "reference": "b8bd1a595b2b3eaff2eab2e872576c19bcd64dc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Translation/zipball/5024eeda16f73ab0ad724e5165f0444bf6698619",
-                "reference": "5024eeda16f73ab0ad724e5165f0444bf6698619",
+                "url": "https://api.github.com/repos/Kdyby/Translation/zipball/b8bd1a595b2b3eaff2eab2e872576c19bcd64dc3",
+                "reference": "b8bd1a595b2b3eaff2eab2e872576c19bcd64dc3",
                 "shasum": ""
             },
             "require": {
@@ -1022,15 +1084,25 @@
                 "nette/php-generator": "~2.2@dev",
                 "nette/reflection": "~2.2@dev",
                 "nette/utils": "~2.2@dev",
-                "symfony/config": "~2.4@stable",
-                "symfony/translation": "~2.4@stable"
+                "symfony/config": "~2.5",
+                "symfony/translation": "~2.5"
             },
             "require-dev": {
-                "jakub-onderka/php-parallel-lint": "~0.6",
+                "jakub-onderka/php-parallel-lint": "~0.7",
+                "nette/application": "~2.2@dev",
                 "nette/bootstrap": "~2.2@dev",
+                "nette/component-model": "~2.2@dev",
+                "nette/database": "~2.2@dev",
+                "nette/forms": "~2.2@dev",
+                "nette/mail": "~2.2@dev",
                 "nette/nette": "~2.2@dev",
+                "nette/robot-loader": "~2.2@dev",
+                "nette/safe-stream": "~2.2@dev",
+                "nette/security": "~2.2@dev",
                 "nette/tester": "@dev",
-                "symfony/console": "~2.4"
+                "nette/tokenizer": "~2.2@dev",
+                "symfony/console": "~2.5",
+                "tracy/tracy": "~2.2@dev"
             },
             "suggest": {
                 "kdyby/console": "If you wanna use extract command and much others, install also console.",
@@ -1072,7 +1144,7 @@
                 "nette",
                 "translation"
             ],
-            "time": "2014-05-24 23:25:10"
+            "time": "2014-08-03 21:13:47"
         },
         {
             "name": "kdyby/validator",
@@ -1080,12 +1152,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Validator.git",
-                "reference": "fc6148cabacf4ca66e64587274ec75c4a14a3919"
+                "reference": "ee2a461d33cb44f617a41dc733d5ca2b40589bd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Validator/zipball/fc6148cabacf4ca66e64587274ec75c4a14a3919",
-                "reference": "fc6148cabacf4ca66e64587274ec75c4a14a3919",
+                "url": "https://api.github.com/repos/Kdyby/Validator/zipball/ee2a461d33cb44f617a41dc733d5ca2b40589bd3",
+                "reference": "ee2a461d33cb44f617a41dc733d5ca2b40589bd3",
                 "shasum": ""
             },
             "require": {
@@ -1097,7 +1169,7 @@
                 "symfony/validator": "~2.3"
             },
             "require-dev": {
-                "jakub-onderka/php-parallel-lint": "~0.6",
+                "jakub-onderka/php-parallel-lint": "~0.7",
                 "latte/latte": "~2.2@dev",
                 "nette/application": "~2.2@dev",
                 "nette/bootstrap": "~2.2@dev",
@@ -1159,7 +1231,7 @@
                 "nette",
                 "validation"
             ],
-            "time": "2014-07-26 15:48:43"
+            "time": "2014-07-27 16:09:23"
         },
         {
             "name": "latte/latte",
@@ -2230,18 +2302,77 @@
             "time": "2014-05-25 06:15:25"
         },
         {
+            "name": "nextras/forms",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nextras/forms.git",
+                "reference": "13e864a7b99e7c8cc6249a52588c94fdd3726406"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nextras/forms/zipball/13e864a7b99e7c8cc6249a52588c94fdd3726406",
+                "reference": "13e864a7b99e7c8cc6249a52588c94fdd3726406",
+                "shasum": ""
+            },
+            "require": {
+                "nette/application": "~2.2",
+                "nette/component-model": "~2.2",
+                "nette/forms": "~2.2",
+                "nette/utils": "~2.2",
+                "php": "~5.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nextras\\Forms\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "http://davidgrudl.com"
+                },
+                {
+                    "name": "Nextras Community",
+                    "homepage": "https://github.com/nextras/forms/graphs/contributors"
+                },
+                {
+                    "name": "Jan Skrasek",
+                    "homepage": "http://jan.skrasek.com"
+                }
+            ],
+            "description": "Extra form components for Nette Framework.",
+            "keywords": [
+                "form",
+                "nette"
+            ],
+            "time": "2014-07-24 07:35:31"
+        },
+        {
             "name": "symfony/config",
-            "version": "v2.5.2",
+            "version": "v2.5.3",
             "target-dir": "Symfony/Component/Config",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "a31aa8029bcc0b5b85578328050aa70d052e177b"
+                "reference": "8d044668c7ccb4ade684e368d910e3aadcff6f6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/a31aa8029bcc0b5b85578328050aa70d052e177b",
-                "reference": "a31aa8029bcc0b5b85578328050aa70d052e177b",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/8d044668c7ccb4ade684e368d910e3aadcff6f6c",
+                "reference": "8d044668c7ccb4ade684e368d910e3aadcff6f6c",
                 "shasum": ""
             },
             "require": {
@@ -2265,33 +2396,31 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Config Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-09 09:05:48"
+            "time": "2014-08-05 09:00:40"
         },
         {
             "name": "symfony/console",
-            "version": "v2.5.2",
+            "version": "v2.5.3",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "386fa63407805959bd2c5fe540294721ad4224c8"
+                "reference": "cd2d1e4bac2206b337326b0140ff475fe9ad5f63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/386fa63407805959bd2c5fe540294721ad4224c8",
-                "reference": "386fa63407805959bd2c5fe540294721ad4224c8",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/cd2d1e4bac2206b337326b0140ff475fe9ad5f63",
+                "reference": "cd2d1e4bac2206b337326b0140ff475fe9ad5f63",
                 "shasum": ""
             },
             "require": {
@@ -2322,23 +2451,21 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-15 14:15:12"
+            "time": "2014-08-05 09:00:40"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.5.2",
+            "version": "v2.5.3",
             "target-dir": "Symfony/Component/Filesystem",
             "source": {
                 "type": "git",
@@ -2371,14 +2498,12 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Filesystem Component",
@@ -2387,17 +2512,17 @@
         },
         {
             "name": "symfony/property-access",
-            "version": "v2.5.2",
+            "version": "v2.5.3",
             "target-dir": "Symfony/Component/PropertyAccess",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/PropertyAccess.git",
-                "reference": "c80993206d5d842c46fc0bdb7da576a42845acfb"
+                "reference": "4a4376295635e3b0d5f6bf2025810a6b69791d6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/PropertyAccess/zipball/c80993206d5d842c46fc0bdb7da576a42845acfb",
-                "reference": "c80993206d5d842c46fc0bdb7da576a42845acfb",
+                "url": "https://api.github.com/repos/symfony/PropertyAccess/zipball/4a4376295635e3b0d5f6bf2025810a6b69791d6e",
+                "reference": "4a4376295635e3b0d5f6bf2025810a6b69791d6e",
                 "shasum": ""
             },
             "require": {
@@ -2420,14 +2545,12 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony PropertyAccess Component",
@@ -2443,21 +2566,21 @@
                 "property path",
                 "reflection"
             ],
-            "time": "2014-07-09 09:05:48"
+            "time": "2014-08-06 06:44:37"
         },
         {
             "name": "symfony/translation",
-            "version": "v2.5.2",
+            "version": "v2.5.3",
             "target-dir": "Symfony/Component/Translation",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "059d57c361043f5a06eb348b9b7554213f9ab8d1"
+                "reference": "ae573e45b099b1e2d332930ac626cd4270e09539"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/059d57c361043f5a06eb348b9b7554213f9ab8d1",
-                "reference": "059d57c361043f5a06eb348b9b7554213f9ab8d1",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/ae573e45b099b1e2d332930ac626cd4270e09539",
+                "reference": "ae573e45b099b1e2d332930ac626cd4270e09539",
                 "shasum": ""
             },
             "require": {
@@ -2488,33 +2611,31 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Translation Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-15 14:22:44"
+            "time": "2014-07-28 13:20:46"
         },
         {
             "name": "symfony/validator",
-            "version": "v2.5.2",
+            "version": "v2.5.3",
             "target-dir": "Symfony/Component/Validator",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Validator.git",
-                "reference": "8205456fe5cae985094a2e2a7b4352d1cef06a25"
+                "reference": "29206be1f75ad2a05b476bd9e5c655c936fa0594"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Validator/zipball/8205456fe5cae985094a2e2a7b4352d1cef06a25",
-                "reference": "8205456fe5cae985094a2e2a7b4352d1cef06a25",
+                "url": "https://api.github.com/repos/symfony/Validator/zipball/29206be1f75ad2a05b476bd9e5c655c936fa0594",
+                "reference": "29206be1f75ad2a05b476bd9e5c655c936fa0594",
                 "shasum": ""
             },
             "require": {
@@ -2560,19 +2681,17 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Validator Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-15 14:15:12"
+            "time": "2014-08-05 15:39:31"
         },
         {
             "name": "tracy/tracy",
@@ -2695,7 +2814,8 @@
     "stability-flags": {
         "kdyby/doctrine-forms": 20,
         "kdyby/doctrine": 20,
-        "kdyby/validator": 20
+        "kdyby/validator": 20,
+        "nextras/forms": 20
     },
     "platform": {
         "php": ">= 5.3.7"
